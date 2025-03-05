@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Calculatrice{% endblock %}
+
+{% block body %}
+    <div class="flex justify-center items-center min-h-screen">
+        <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-sm">
+            
+            <h1>Calculatrice</h1>
+            <p>Voici le résultat de votre opération :</p>
+            <p>{{ nbr1 }} {{ operateur }} {{ nbr2 }} = {{ resultat }}</p>
+
+        </div>
+    </div>
+{% endblock %}
