@@ -18,12 +18,15 @@ app_user_login:
 app_user_home:
     path: /
     controller: App\Controller\HomeController::index
-app_user_articles:
-    path: "/article_list"
-    controller: App\Controller\ArticleController::allArticles
-app_user_article_detail:
+app_article_article_detail:
     path: "/article/{id}"
     controller: App\Controller\ArticleController::articleId
 app_home_calculatrice:
     path: "/calculatrice/{n1}/{operator}/{n2}"
     controller: App\Controller\CalculatriceController::calculatrice
+app_user_showall_users:
+    path: "/users_list"
+    controller: App\Controller\AccountController::showAllAccount
+app_article_showall_articles:
+    path: "/articles_list"
+    controller: App\Controller\ArticleController::showAllArticle
