@@ -30,3 +30,12 @@ app_user_showall_users:
 app_article_showall_articles:
     path: "/articles_list"
     controller: App\Controller\ArticleController::showAllArticle
+app_category_all:
+    path: "/categories"
+    controller: App\Controller\ApiCategoryController::getAllCategories
+app_account_all:
+    path: "/accounts"
+    controller: App\Controller\ApiAccountController::getAllAccounts
+app_article_all:
+    path: "/articles"
+    controller: App\Controller\ApiArticleController::getAllArticles
