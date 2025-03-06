@@ -42,3 +42,6 @@ app_article_all:
 app_article_id:
     path: "/articles/{id}"
     controller: App\Controller\ApiArticleController::getArticleById
+app_user_register_post:
+    path: "/login"
+    controller: App\Controller\ApiAccountController::addAccount
