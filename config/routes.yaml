@@ -39,3 +39,6 @@ app_account_all:
 app_article_all:
     path: "/articles"
     controller: App\Controller\ApiArticleController::getAllArticles
+app_article_id:
+    path: "/articles/{id}"
+    controller: App\Controller\ApiArticleController::getArticleById
