@@ -43,5 +43,26 @@ app_article_id:
     path: "/articles/{id}"
     controller: App\Controller\ApiArticleController::getArticleById
 app_user_register_post:
-    path: "/login"
+    path: "/register"
     controller: App\Controller\ApiAccountController::addAccount
+    methods: ['POST']
+app_article_add:
+    path: "/article"
+    controller: App\Controller\ApiArticleController::addArticle
+    methods: ['POST']
+app_category_add:
+    path: "/category"
+    controller: App\Controller\ApiArticleController::addCategory
+    methods: ['POST']
+app_account_update:
+    path: "/account/{email}"
+    controller: App\Controller\ApiAccountController::updateAccount
+    methods: ['PUT']
+app_account_delete:
+    path: "/account/{id}"
+    controller: App\Controller\ApiAccountController::deleteAccount
+    methods: ['DELETE']
+app_password_update:
+    path: "/account_pass/{id}"
+    controller: App\Controller\ApiAccountController::updatePassword
+    methods: ['PUT']

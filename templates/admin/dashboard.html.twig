@@ -1,0 +1,23 @@
+{% extends '@EasyAdmin/page/content.html.twig' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+    <link rel="stylesheet" href="{{ asset('styles/tailwind.css') }}" />
+    
+    <div>
+        <h1 class="font-bold" style="font-size: 52px;">Dashboard</h1>
+
+        <div style="margin-top: 200px;" class="flex justify-center items-center w-full max-w-4xl mx-auto">
+            <div style="margin-right: 15vw;">
+                <a href="admin/account" class="block bg-blue-500 text-white px-4 py-4 text-xl rounded-lg hover:bg-blue-700 text-center w-32">Utilisateurs</a>
+            </div>
+            <div style="margin-right: 15vw;">
+                <a href="/admin/category" class="block bg-blue-500 text-white px-4 py-4 text-xl rounded-lg hover:bg-blue-700 text-center w-32">Categories</a>
+            </div>
+            <div>
+                <a href="/admin/article" class="block bg-blue-500 text-white px-4 py-4 text-xl rounded-lg hover:bg-blue-700 text-center w-32">Articles</a>
+            </div>
+        </div>  
+    </div>
+{% endblock %}

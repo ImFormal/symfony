@@ -1,0 +1,21 @@
+meta {
+  name: ajouter une categorie
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://127.0.0.1:8000/category
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name":"test"
+  }
+}
+
+body:text {
+  texte
+}

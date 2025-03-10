@@ -28,7 +28,10 @@ class ApiCategoryController extends AbstractController
         return $this->json(
             $this->categoryRepository->findAll(),
             200,
-            [],
+            [
+                "Access-Control-Allow-Origin" => "*",
+                "Content-Type" => "application/json"
+            ],
             ['groups' => 'category:read']
         );
     }
