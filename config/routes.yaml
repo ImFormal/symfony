@@ -46,13 +46,13 @@ app_user_register_post:
     path: "/register"
     controller: App\Controller\ApiAccountController::addAccount
     methods: ['POST']
-app_article_add:
-    path: "/article"
+app_api_article_add:
+    path: "/articleapi"
     controller: App\Controller\ApiArticleController::addArticle
     methods: ['POST']
-app_category_add:
-    path: "/category"
-    controller: App\Controller\ApiArticleController::addCategory
+app_api_category_add:
+    path: "/categoryapi"
+    controller: App\Controller\ApiCategoryController::addCategory
     methods: ['POST']
 app_account_update:
     path: "/account/{email}"
@@ -66,3 +66,15 @@ app_password_update:
     path: "/account_pass/{id}"
     controller: App\Controller\ApiAccountController::updatePassword
     methods: ['PUT']
+app_category_add:
+    path: "/category/add"
+    controller: App\Controller\CategoryController::addCategory
+app_category:
+    path: "/category"
+    controller: App\Controller\CategoryController::showAllCategories
+app_account_add:
+    path: "/account/add"
+    controller: App\Controller\AccountController::addAccount
+app_article_add:
+    path: "/articleadd"
+    controller: App\Controller\ArticleController::addArticle

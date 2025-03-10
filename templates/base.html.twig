@@ -19,19 +19,24 @@
                 <nav>
                     <ul class="flex space-x-6">
                         <li><a href="{{ path('app_user_home') }}" class="hover:underline">Home</a></li>
-                        <li><a href="{{ path('app_article_showall_articles') }}" class="hover:underline">Listes des articles</a></li>
-                        <li><a href="#" class="hover:underline">Ajouter article</a></li>
+                        <li><a href="{{ path('app_article_showall_articles') }}" class="hover:underline">Liste des articles</a></li>
+                        <li><a href="{{ path('app_category') }}" class="hover:underline">Liste des catégories</a></li>
+                        <li><a href="{{ path('app_user_showall_users') }}" class="hover:underline">Listes des comptes</a></li>
+                        <li><a href="{{ path('app_article_add') }}" class="hover:underline">Ajouter article</a></li>
+                        <li><a href="{{ path('app_category_add') }}" class="hover:underline">Ajouter catégorie</a></li>
+                        <li><a href="{{ path('app_account_add') }}" class="hover:underline">Ajouter account</a></li>
                         <li><a href="{{ path('app_user_register') }}" class="hover:underline">Inscription</a></li>
                         <li><a href="{{ path('app_user_login') }}" class="hover:underline">Connexion</a></li>
-                        <li><a href="{{ path('app_user_showall_users') }}" class="hover:underline">Listes des comptes</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-        {% block body %}{% endblock %}
+        <div class="h-screen">
+            {% block body %}{% endblock %}
+        </div>
 
-        <footer class="bg-gray-800 text-white py-6">
+        <footer class="bg-gray-800 text-white py-6 left-0 bottom-0 relative w-full">
             <div class="max-w-screen-xl mx-auto flex justify-center">
                 <ul class="flex justify-evenly w-full">
                     <li><a href="#" class="hover:underline">Conditions générales</a></li>
