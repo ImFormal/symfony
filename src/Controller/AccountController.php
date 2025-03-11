@@ -51,7 +51,7 @@ class AccountController extends AbstractController{
         }
 
         return $this->render('show_user.html.twig', [ 
-            "account" => $account
+            "account" => $account??null
         ]);
     }
 
