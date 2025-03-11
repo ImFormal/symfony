@@ -10,6 +10,9 @@
                 <div class="bg-white shadow-lg rounded-lg p-4" id="account-{{ account.id }}">
                     <h2 class="text-xl font-semibold">{{ account.firstname }} {{ account.lastname }}</h2>
                     <p class="text-gray-700">{{ account.email }}</p>
+                    <div class="mt-4">
+                        <a href="{{ path('app_show_user', {'id': account.id}) }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Voir plus</a>
+                    </div>
                 </div>
             {% endfor %}
         </div>

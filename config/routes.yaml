@@ -78,3 +78,6 @@ app_account_add:
 app_article_add:
     path: "/articleadd"
     controller: App\Controller\ArticleController::addArticle
+app_show_user:
+    path: "/show-account/{id}"
+    controller: App\Controller\AccountController::showById
