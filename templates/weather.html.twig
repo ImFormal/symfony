@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Weather{% endblock %}
+
+{% block body %}
+    <div class="flex justify-center items-center min-h-screen">
+        <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-sm">
+            <p>{{ weather.sys.country }}</p>
+            <p>Voici la météo de {{ weather.name }} :</p>
+            <p>{{ (weather.main.temp - 273.15) | number_format(1) }}°C</p>
+            <img src="https://openweathermap.org/img/wn/{{ weather.weather[0].icon }}@2x.png" alt="Weather icon">
+    
+        </div>
+    </div>
+{% endblock %}
